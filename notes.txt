@@ -1,3 +1,16 @@
+
+// Rota: endereço compleo da requisição
+// Recurso: entidade que estamos acessando no sistema
+
+// GET: buscar informações do backend
+// POST: criar uma informação no backend
+// PUT: atualizar uma informação do backend
+// DELETE: deletar uma informação do backend
+
+// Request Param: parâmetros que vem na propria rota e identifica um recurso
+// Request Body: parâmetros para criação e atualização de informações
+// Query Param: parâmetros que vemna propria rota, geralmente opcionais pra filtros, paginação,..
+
 // começar o projeto node
 npm init -y
 
@@ -25,14 +38,12 @@ npm install knex
 // instalação do banco de dados sqllite3
 npm install sqllite3
 
-// Rota: endereço compleo da requisição
-// Recurso: entidade que estamos acessando no sistema
+// Migration: histórico do banco de dados
+// A ordem da criação das migrations será a ordem de execução. 
+// Método up realiza a criação da tabela
+// Método down realiza o rollback da operação
 
-// GET: buscar informações do backend
-// POST: criar uma informação no backend
-// PUT: atualizar uma informação do backend
-// DELETE: deletar uma informação do backend
 
-// Request Param: parâmetros que vem na propria rota e identifica um recurso
-// Request Body: parâmetros para criação e atualização de informações
-// Query Param: parâmetros que vemna propria rota, geralmente opcionais pra filtros, paginação,..
+// executa as migrations pra criar as tabelas
+npx knex migrate:latest --knexfile knexfile.ts migrate:latest
+
