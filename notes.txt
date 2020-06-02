@@ -19,6 +19,11 @@ npm install ts-node-dev -D
 npx ts-node src/server.ts
 npx ts-node-dev src/server.ts
 
+// knex para fazer Query em qualquer bd
+npm install knex
+
+// instalação do banco de dados sqllite3
+npm install sqllite3
 
 // Rota: endereço compleo da requisição
 // Recurso: entidade que estamos acessando no sistema
