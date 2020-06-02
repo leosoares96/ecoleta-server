@@ -1,0 +1,33 @@
+// começar o projeto node
+npm init -y
+
+// intalação do express para gerenciar rotas
+npm install express
+npm install @types/express -D
+
+// instalações do typescript
+npm install ts-node -D
+npm install typescript -D
+
+// arquivo de config do typescript
+npx tsc --init
+
+// atualiza ao salvar as alterações
+npm install ts-node-dev -D
+
+// executar typescript
+npx ts-node src/server.ts
+npx ts-node-dev src/server.ts
+
+
+// Rota: endereço compleo da requisição
+// Recurso: entidade que estamos acessando no sistema
+
+// GET: buscar informações do backend
+// POST: criar uma informação no backend
+// PUT: atualizar uma informação do backend
+// DELETE: deletar uma informação do backend
+
+// Request Param: parâmetros que vem na propria rota e identifica um recurso
+// Request Body: parâmetros para criação e atualização de informações
+// Query Param: parâmetros que vemna propria rota, geralmente opcionais pra filtros, paginação,..
