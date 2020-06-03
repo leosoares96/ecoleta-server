@@ -7,9 +7,9 @@
 // PUT: atualizar uma informação do backend
 // DELETE: deletar uma informação do backend
 
-// Request Param: parâmetros que vem na propria rota e identifica um recurso
-// Request Body: parâmetros para criação e atualização de informações
-// Query Param: parâmetros que vemna propria rota, geralmente opcionais pra filtros, paginação,..
+// request.params: parâmetros que vem na propria rota e identifica um recurso
+// request.body: parâmetros para criação e atualização de informações
+// request.query parâmetros que vemna propria rota, geralmente opcionais pra filtros, paginação,..
 
 // começar o projeto node
 npm init -y
@@ -47,3 +47,6 @@ npm install sqllite3
 // executa as migrations pra criar as tabelas
 npx knex migrate:latest --knexfile knexfile.ts migrate:latest
 
+// instalar o cors pra definir qual dominio pode acessar a aplicação
+npm install cors
+npm install @types/cors -D
