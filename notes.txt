@@ -50,3 +50,7 @@ npx knex migrate:latest --knexfile knexfile.ts migrate:latest
 // instalar o cors pra definir qual dominio pode acessar a aplicação
 npm install cors
 npm install @types/cors -D
+
+// upload de imagens
+npm install multer
+npm install @types/multer
